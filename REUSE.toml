@@ -1,0 +1,15 @@
+version = 1
+
+## CI/CD files.
+[[annotations]]
+path = ".github/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
+
+## Configuration files.
+[[annotations]]
+path = ["REUSE.toml"]
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
