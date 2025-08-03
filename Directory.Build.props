@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RepositoryRootDirectory>$(MSBuildThisFileDirectory)</RepositoryRootDirectory>
+    <VendorDirectory>$([MSBuild]::NormalizePath('$(RepositoryRootDirectory)', '.vendor'))</VendorDirectory>
+  </PropertyGroup>
+
+</Project>

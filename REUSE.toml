@@ -7,9 +7,23 @@ precedence = "override"
 SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
 SPDX-License-Identifier = "Apache-2.0"
 
+## Vendored dependency binding files.
+[[annotations]]
+path = ".vendor/etcd.proto.proj"
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
+
+## Project files.
+[[annotations]]
+path = ["library/**", "Directory.Build.props", "Directory.Build.targets"]
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
+
 ## Configuration files.
 [[annotations]]
-path = [".editorconfig", "REUSE.toml"]
+path = [".editorconfig", ".gitmodules", "REUSE.toml"]
 precedence = "override"
 SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
 SPDX-License-Identifier = "Apache-2.0"

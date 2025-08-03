@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <Target
+    Name="IncludeProtoFiles"
+    BeforeTargets="_GetPackageFiles"
+    Inputs="@(ProtoInclude)"
+    Outputs="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')">
+
+    <Copy
+      SourceFiles="@(ProtoInclude)"
+      DestinationFiles="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')" />
+
+    <WriteLinesToFile
+      File="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')"
+      Condition="'%(ProtoInclude.Namespace)' != ''"
+      Lines="option csharp_namespace = '%(ProtoInclude.Namespace)'$([MSBuild]::Escape(';'))" />
+
+    <ItemGroup>
+      <Content Include="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <Pack>true</Pack>
+        <PackagePath>contentFiles\any\any\%(ProtoInclude.Link)</PackagePath>
+      </Content>
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,19 @@
+[submodule "etcd"]
+	path = .vendor/etcd
+	url = https://github.com/etcd-io/etcd.git
+	shallow = true
+
+[submodule "gogoproto"]
+	path = .vendor/gogoproto
+	url = https://github.com/gogo/protobuf.git
+	shallow = true
+
+[submodule "grpc-gateway"]
+	path = .vendor/grpc-gateway
+	url = https://github.com/grpc-ecosystem/grpc-gateway.git
+	shallow = true
+
+[submodule "googleapis"]
+	path = .vendor/googleapis
+	url = https://github.com/googleapis/googleapis.git
+	shallow = true
