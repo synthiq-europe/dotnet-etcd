@@ -13,3 +13,10 @@ path = [".editorconfig", "REUSE.toml"]
 precedence = "override"
 SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
 SPDX-License-Identifier = "Apache-2.0"
+
+## Documentation files.
+[[annotations]]
+path = ["README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
