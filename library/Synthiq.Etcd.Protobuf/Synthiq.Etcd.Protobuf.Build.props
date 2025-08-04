@@ -10,22 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None
-      Include="icon.png"
-      Pack="true"
-      PackagePath="\" />
-
-    <None
-      Include="README.md"
-      Pack="true"
-      PackagePath="\" />
-
+    <None Include="assets\icon.png" Pack="true" PackagePath="\" />
+    <None Include="assets\README.md" Pack="true" PackagePath="\" />
     <!-- Placeholder to enforce the setting of GeneratePathProperty. -->
     <!-- This should make the package easier for consumption. -->
-    <None
-      Include="tools\_._"
-      Pack="true"
-      PackagePath="tools\" />
+    <None Include="assets\tools\_._" Pack="true" PackagePath="tools\" />
   </ItemGroup>
 
   <ItemGroup>
