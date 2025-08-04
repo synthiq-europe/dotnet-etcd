@@ -4,6 +4,10 @@
   <Import Project="$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)', '..', 'Directory.Build.props'))" />
 
   <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <LibraryDirectory>$(MSBuildThisFileDirectory)</LibraryDirectory>
   </PropertyGroup>
 
