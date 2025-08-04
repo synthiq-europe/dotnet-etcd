@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <PropertyGroup>
+    <EtcdProtoRoot>$(PkgSynthiq_Etcd_Protobuf)\contentFiles\any\any</EtcdProtoRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="assets\icon.png" Pack="true" PackagePath="\" />
+    <None Include="assets\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf
+      Include="$(EtcdProtoRoot)\**\*.proto"
+      OutputDir="$(IntermediateOutputPath)proto\%(RecursiveDir)"
+      GrpcServices="Client"
+      AdditionalImportDirs="$(EtcdProtoRoot)" />
+  </ItemGroup>
+
+</Project>

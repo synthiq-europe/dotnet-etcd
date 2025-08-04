@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="Synthiq.Etcd.Client.Build.props" />
+
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+
+    <Authors>Synthiq</Authors>
+    <Company>Synthiq</Company>
+    <Copyright>Copyright (C) 2025 Synthiq</Copyright>
+    <Description>Client for interacting with etcd from .NET.</Description>
+
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageId>Synthiq.Etcd.Client</PackageId>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/synthiq-europe/dotnet-etcd</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>etcd</PackageTags>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/synthiq-europe/dotnet-etcd</RepositoryUrl>
+  </PropertyGroup>
+
+  <Import Project="Synthiq.Etcd.Client.Dependencies.props" />
+
+</Project>
