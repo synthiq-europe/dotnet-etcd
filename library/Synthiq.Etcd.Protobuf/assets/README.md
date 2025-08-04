@@ -1,5 +1,8 @@
 # Synthiq.Etcd.Protobuf
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![REUSE status](https://api.reuse.software/badge/github.com/synthiq-europe/etcd)](https://api.reuse.software/info/github.com/synthiq-europe/etcd)
+
 gRPC/Protocol Buffers definitions for interacting with etcd from .NET. \
 This package is primarily meant for authors of service client libraries.
 
