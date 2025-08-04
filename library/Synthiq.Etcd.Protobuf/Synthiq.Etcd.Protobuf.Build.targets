@@ -22,7 +22,7 @@
     <WriteLinesToFile
       File="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')"
       Condition="'%(ProtoInclude.Namespace)' != ''"
-      Lines="option csharp_namespace = '%(ProtoInclude.Namespace)'$([MSBuild]::Escape(';'))" />
+      Lines="option csharp_namespace = &quot;%(ProtoInclude.Namespace)&quot;$([MSBuild]::Escape(';'))" />
 
     <ItemGroup>
       <Content Include="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')">
