@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
 
+  <Target Name="CalculateProtoFilePaths">
+    <PropertyGroup>
+      <ProtoOutputPath>$(IntermediateOutputPath)\proto</ProtoOutputPath>
+    </PropertyGroup>
+  </Target>
+
   <Target
     Name="IncludeProtoFiles"
+    AfterTargets="CopyFilesToOutputDirectory"
     BeforeTargets="_GetPackageFiles"
+    DependsOnTargets="CalculateProtoFilePaths"
     Inputs="@(ProtoInclude)"
     Outputs="@(ProtoInclude->'$(ProtoOutputPath)\%(Link)')">
 
@@ -24,6 +32,7 @@
         <PackagePath>contentFiles\any\any\%(ProtoInclude.Link)</PackagePath>
       </Content>
     </ItemGroup>
+
   </Target>
 
 </Project>
