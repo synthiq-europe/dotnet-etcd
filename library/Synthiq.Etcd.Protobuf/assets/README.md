@@ -17,7 +17,7 @@ For a client, you could integrate it into your build like so:
   <PackageReference Include="Google.Protobuf" Version="3.31.1" />
   <PackageReference Include="Grpc.Net.Client" Version="2.71.0" />
   <!-- etcd version 3.6.4, package revision 0. -->
-  <PackageReference Include="Synthiq.Etcd.Protobuf" Version="3.6.4.2" />
+  <PackageReference Include="Synthiq.Etcd.Protobuf" Version="3.6.4.3" />
 </ItemGroup>
 
 <ItemGroup>
