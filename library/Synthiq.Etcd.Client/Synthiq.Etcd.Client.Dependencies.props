@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
 
-  <ItemGroup>
-    <ProjectReference Include="$(LibraryDirectory)\Synthiq.Etcd.Protobuf\Synthiq.Etcd.Protobuf.csproj">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </ProjectReference>
-  </ItemGroup>
-
   <!-- Runtime dependencies. -->
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" />
     <PackageReference Include="Grpc.Net.Client" />
+    <PackageReference Include="Synthiq.Etcd.Protobuf" />
   </ItemGroup>
 
   <!-- Development dependencies. -->
