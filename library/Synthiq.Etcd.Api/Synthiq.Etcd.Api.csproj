@@ -16,7 +16,7 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/synthiq-europe/dotnet-etcd</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>etcd;grpc</PackageTags>
+    <PackageTags>etcd;grpc;database</PackageTags>
 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/synthiq-europe/dotnet-etcd</RepositoryUrl>
