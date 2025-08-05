@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="assets\icon.png" Pack="true" PackagePath="\" />
+    <None Include="assets\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

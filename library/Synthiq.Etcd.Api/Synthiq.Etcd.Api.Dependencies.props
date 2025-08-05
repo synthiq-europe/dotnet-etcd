@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <!-- Runtime dependencies. -->
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Net.Client" />
+  </ItemGroup>
+
+  <!-- Development dependencies. -->
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Synthiq.Etcd.Api.Protobuf">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

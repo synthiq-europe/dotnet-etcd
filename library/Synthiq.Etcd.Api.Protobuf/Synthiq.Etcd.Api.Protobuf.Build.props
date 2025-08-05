@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoBuild>true</NoBuild>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="assets\icon.png" Pack="true" PackagePath="\" />
+    <None Include="assets\README.md" Pack="true" PackagePath="\" />
+    <!-- Placeholder to enforce the setting of GeneratePathProperty. -->
+    <!-- This should make the package easier for consumption. -->
+    <None Include="assets\tools\_._" Pack="true" PackagePath="tools\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProtoInclude
+      Include="$(VendorDirectory)\etcd\api\etcdserverpb\rpc.proto"
+      Namespace="$(AssemblyName)"
+      Link="etcd\api\etcdserverpb\rpc.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\etcd\api\authpb\auth.proto"
+      Link="etcd\api\authpb\auth.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\etcd\api\mvccpb\kv.proto"
+      Link="etcd\api\mvccpb\kv.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\etcd\api\versionpb\version.proto"
+      Link="etcd\api\versionpb\version.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\gogoproto\gogoproto\gogo.proto"
+      Link="gogoproto\gogo.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\grpc-gateway\protoc-gen-openapiv2\options\annotations.proto"
+      Link="protoc-gen-openapiv2\options\annotations.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\grpc-gateway\protoc-gen-openapiv2\options\openapiv2.proto"
+      Link="protoc-gen-openapiv2\options\openapiv2.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\googleapis\google\api\annotations.proto"
+      Link="google\api\annotations.proto" />
+    <ProtoInclude
+      Include="$(VendorDirectory)\googleapis\google\api\http.proto"
+      Link="google\api\http.proto" />
+  </ItemGroup>
+
+</Project>

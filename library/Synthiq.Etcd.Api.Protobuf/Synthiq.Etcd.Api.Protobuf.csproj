@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="Synthiq.Etcd.Protobuf.Build.props" />
+  <Import Project="Synthiq.Etcd.Api.Protobuf.Build.props" />
 
   <PropertyGroup>
     <Version>3.6.4.4</Version>
@@ -12,7 +12,7 @@
     <Description>gRPC/Protocol Buffers definitions for interacting with etcd from .NET.</Description>
 
     <PackageIcon>icon.png</PackageIcon>
-    <PackageId>Synthiq.Etcd.Protobuf</PackageId>
+    <PackageId>Synthiq.Etcd.Api.Protobuf</PackageId>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/synthiq-europe/dotnet-etcd</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -22,6 +22,6 @@
     <RepositoryUrl>https://github.com/synthiq-europe/dotnet-etcd</RepositoryUrl>
   </PropertyGroup>
 
-  <Import Project="Synthiq.Etcd.Protobuf.Build.targets" />
+  <Import Project="Synthiq.Etcd.Api.Protobuf.Build.targets" />
 
 </Project>

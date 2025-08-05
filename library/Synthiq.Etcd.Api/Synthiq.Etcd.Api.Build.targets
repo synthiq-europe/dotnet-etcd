@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <!--
+    ============================================================
+    _ConfigureProtoPaths
+    Configure protobuf paths.
+    ============================================================
+  -->
+  <Target Name="_ConfigureProtoPaths">
+    <PropertyGroup>
+      <ProtoOutputPath>$(IntermediateOutputPath)\proto</ProtoOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProtoInclude
+        Include="$(PkgSynthiq_Etcd_Api_Protobuf)\contentFiles\any\any\**\*.proto" />
+      <ProtoOutput
+        Include="@(ProtoInclude->'$(ProtoOutputPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
+      <EtcdProtoOutput
+        Include="@(ProtoInclude->'$(ProtoOutputPath)\%(RecursiveDir)%(Filename)%(Extension)')"
+        Condition="$([System.String]::Copy('%(ProtoInclude.RecursiveDir)').StartsWith('etcd'))" />
+    </ItemGroup>
+  </Target>
+
+  <!--
+    ============================================================
+    _CopyProtoInclude
+    Copy ProtoInclude files to ProtoOutput.
+    ============================================================
+  -->
+  <Target Name="_CopyProtoInclude" DependsOnTargets="_ConfigureProtoPaths" Inputs="@(ProtoInclude)"
+    Outputs="@(ProtoOutput)">
+    <Copy
+      SourceFiles="@(ProtoInclude)"
+      DestinationFiles="@(ProtoOutput)" />
+  </Target>
+
+  <!--
+    ============================================================
+    _TransformProtoOutput
+    Transform protobuf outputs for use with the library.
+    ============================================================
+  -->
+  <Target Name="_TransformProtoOutput" DependsOnTargets="_CopyProtoInclude">
+    <WriteLinesToFile
+      File="%(EtcdProtoOutput.Identity)"
+      Encoding="UTF-8"
+      Overwrite="false"
+      Lines="option csharp_namespace = &quot;$(AssemblyName)&quot;$([MSBuild]::Escape(';'))" />
+  </Target>
+
+  <!--
+    ============================================================
+    _AddProtoOutput
+    Add ProtoOutput to Protobuf compile items.
+    ============================================================
+  -->
+  <Target Name="_AddProtoOutput" DependsOnTargets="_ConfigureProtoPaths;_TransformProtoOutput"
+    BeforeTargets="BeforeCompile">
+    <ItemGroup>
+      <Protobuf
+        Include="%(ProtoOutput.Identity)"
+        OutputDir="%(ProtoOutput.RecursiveDir)"
+        GrpcServices="Client"
+        AdditionalImportDirs="$(ProtoOutputPath)" />
+    </ItemGroup>
+  </Target>
+
+</Project>
