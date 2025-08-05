@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="Synthiq.Etcd.Client.Dependencies.props" />
   <Import Project="Synthiq.Etcd.Client.Build.props" />
 
   <PropertyGroup>
@@ -22,6 +23,6 @@
     <RepositoryUrl>https://github.com/synthiq-europe/dotnet-etcd</RepositoryUrl>
   </PropertyGroup>
 
-  <Import Project="Synthiq.Etcd.Client.Dependencies.props" />
+  <Import Project="Synthiq.Etcd.Client.Build.targets" />
 
 </Project>

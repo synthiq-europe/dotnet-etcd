@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <Target Name="GenerateDiagnosticsVersion" BeforeTargets="BeforeCompile">
+    <PropertyGroup>
+      <GeneratedDiagnosticsVersionLines>
+        namespace Synthiq.Etcd.Client$([MSBuild]::Escape(';'))
+
+public static partial class Diagnostics {
+    public const string Name = &quot;$(AssemblyName)&quot;$([MSBuild]::Escape(';'))
+    public const string Version = &quot;$(Version)&quot;$([MSBuild]::Escape(';'))
+}
+      </GeneratedDiagnosticsVersionLines>
+    </PropertyGroup>
+    <WriteLinesToFile
+      File="obj/Diagnostics.Version.generated.cs"
+      Lines="$(GeneratedDiagnosticsVersionLines)"
+      Overwrite="true" />
+
+    <ItemGroup>
+      <Compile Include="obj/Diagnostics.Version.generated.cs" />
+    </ItemGroup>
+  </Target>
+
+</Project>

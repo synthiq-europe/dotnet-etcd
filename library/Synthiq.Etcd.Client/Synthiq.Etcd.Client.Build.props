@@ -2,20 +2,14 @@
 <Project>
 
   <PropertyGroup>
-    <EtcdProtoRoot>$(PkgSynthiq_Etcd_Protobuf)\contentFiles\any\any</EtcdProtoRoot>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="assets\icon.png" Pack="true" PackagePath="\" />
     <None Include="assets\README.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Protobuf
-      Include="$(EtcdProtoRoot)\**\*.proto"
-      OutputDir="$(IntermediateOutputPath)proto\%(RecursiveDir)"
-      GrpcServices="Client"
-      AdditionalImportDirs="$(EtcdProtoRoot)" />
   </ItemGroup>
 
 </Project>

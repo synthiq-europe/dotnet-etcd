@@ -3,17 +3,7 @@
 
   <!-- Runtime dependencies. -->
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" />
-    <PackageReference Include="Grpc.Net.Client" />
-    <PackageReference Include="Synthiq.Etcd.Protobuf" />
-  </ItemGroup>
-
-  <!-- Development dependencies. -->
-  <ItemGroup>
-    <PackageReference Include="Grpc.Tools">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
+    <PackageReference Include="Synthiq.Etcd.Api" />
   </ItemGroup>
 
 </Project>
