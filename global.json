@@ -1,0 +1,8 @@
+{
+  "sdk": {
+    "version": "9.0.304"
+  },
+  "msbuild-sdks": {
+    "DotNet.ReproducibleBuilds.Isolated": "1.2.25"
+  }
+}

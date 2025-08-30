@@ -23,7 +23,14 @@ SPDX-License-Identifier = "Apache-2.0"
 
 ## Project files.
 [[annotations]]
-path = ["library/**", "Directory.Build.props", "Directory.Build.targets"]
+path = [
+  "libraries/**",
+  ".globalconfig",
+  "Directory.Build.props",
+  "Directory.Build.targets",
+  "Directory.Packages.props",
+  "global.json",
+]
 precedence = "override"
 SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
 SPDX-License-Identifier = "Apache-2.0"

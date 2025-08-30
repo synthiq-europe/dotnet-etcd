@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project />
+<Project>
+
+  <!-- Build dependencies. -->
+
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- Analysis dependencies. -->
+
+  <ItemGroup Condition="'$(IsSourceProject)' == 'true'">
+    <PackageReference Include="Microsoft.DotNet.ApiCompat.Task">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsSourceProject)' == 'true' or '$(IsTestProject)' == 'true'">
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

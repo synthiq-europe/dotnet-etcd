@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="Synthiq.Etcd.Api/Synthiq.Etcd.Api.csproj" />
-  <Project Path="Synthiq.Etcd.Api.Protobuf/Synthiq.Etcd.Api.Protobuf.csproj" />
-  <Project Path="Synthiq.Etcd.Client/Synthiq.Etcd.Client.csproj" />
-  <Project Path="Synthiq.Etcd.Client.Tests/Synthiq.Etcd.Client.Tests.csproj" />
-</Solution>

@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
 
+  <!-- Directory configuration. -->
   <PropertyGroup>
-    <RepositoryRootDirectory>$(MSBuildThisFileDirectory)</RepositoryRootDirectory>
-    <VendorDirectory>$([MSBuild]::NormalizePath('$(RepositoryRootDirectory)', '.vendor'))</VendorDirectory>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+    <VendorRoot>$([MSBuild]::NormalizePath('$(RepositoryRoot)', '.vendor'))</VendorRoot>
+    <ExamplesRoot>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', 'examples'))</ExamplesRoot>
+    <LibrariesRoot>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', 'libraries'))</LibrariesRoot>
   </PropertyGroup>
+
+  <!-- Target configuration. -->
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <!-- Package restore configuration. -->
+  <PropertyGroup>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode Condition="'$(CI)' == 'true'">true</RestoreLockedMode>
+  </PropertyGroup>
+
+  <!-- Package publish configuration. -->
+  <PropertyGroup>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <!-- Language configuration. -->
+  <PropertyGroup>
+    <LangVersion>13.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Analyzer configuration. -->
+  <PropertyGroup>
+    <AnalysisMode>All</AnalysisMode>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GlobalConfigFile>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '.globalconfig'))</GlobalConfigFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="$(GlobalConfigFile)" />
+  </ItemGroup>
+
+  <!-- All reference assemblies should not output debug files. -->
+  <PropertyGroup Condition="'$(IsReferenceAssemblyProject)' == 'true'">
+    <DebugType>none</DebugType>
+    <PublishWindowsPdb>false</PublishWindowsPdb>
+  </PropertyGroup>
+
+  <!-- All reference assemblies should have a ReferenceAssemblyAttribute and
+       the 0x70 AssemblyFlag, which prevents them from loading. -->
+  <ItemGroup Condition="'$(IsReferenceAssemblyProject)' == 'true'">
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.ReferenceAssemblyAttribute" />
+    <AssemblyAttribute Include="System.Reflection.AssemblyFlags">
+      <_Parameter1>(System.Reflection.AssemblyNameFlags)0x70</_Parameter1>
+      <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <!-- All source assemblies should be validated against their reference assemblies. -->
+  <PropertyGroup Condition="'$(IsSourceProject)' == 'true'">
+    <ApiCompatStrictMode>true</ApiCompatStrictMode>
+    <ApiCompatValidateAssemblies>true</ApiCompatValidateAssemblies>
+  </PropertyGroup>
+
+  <!-- All source and reference assemblies should be marked as CLS compliant. -->
+  <ItemGroup Condition="'$(IsSourceProject)' == 'true' or
+                        '$(IsReferenceAssemblyProject)' == 'true'">
+    <AssemblyAttribute Include="System.CLSCompliantAttribute">
+      <_Parameter1>true</_Parameter1>
+      <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <Sdk Name="DotNet.ReproducibleBuilds.Isolated" />
 
 </Project>
