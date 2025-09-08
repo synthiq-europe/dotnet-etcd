@@ -1,6 +1,6 @@
 version = 1
 
-## CI/CD files.
+## GitHub support files.
 [[annotations]]
 path = ".github/**"
 precedence = "override"
@@ -17,6 +17,13 @@ SPDX-License-Identifier = "Apache-2.0"
 ## IDE configuration files.
 [[annotations]]
 path = ".vscode/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
+SPDX-License-Identifier = "Apache-2.0"
+
+## Project management files.
+[[annotations]]
+path = "engineering/**"
 precedence = "override"
 SPDX-FileCopyrightText = "Copyright (C) 2025 Synthiq"
 SPDX-License-Identifier = "Apache-2.0"
