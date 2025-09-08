@@ -9,3 +9,4 @@ More information on the lADR format can be found in
 on documenting architecture decisions.
 
 - [lADR-001: Language and runtime](001.md)
+- [lADR-002: Base client design](002.md)
