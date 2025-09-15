@@ -12,7 +12,7 @@
   <!-- Development dependencies. -->
   <ItemGroup>
     <PackageVersion Include="DotNet.ReproducibleBuilds" Version="[1.2.25]" />
-    <PackageVersion Include="Microsoft.DotNet.ApiCompat.Task" Version="[9.0.304]" />
+    <PackageVersion Include="Microsoft.DotNet.ApiCompat.Task" Version="[9.0.305]" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="[17.14.1]" />
     <PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers" Version="[17.14.15]" />
   </ItemGroup>
