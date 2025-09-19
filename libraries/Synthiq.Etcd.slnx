@@ -1,0 +1,49 @@
+<Solution>
+
+  <!-- Reference assembly projects -->
+  <Folder Name="/ref/Synthiq.Etcd.Client/">
+    <Project Path="Synthiq.Etcd.Client/ref/Synthiq.Etcd.Client.csproj" />
+  </Folder>
+  <Folder Name="/ref/Synthiq.Etcd.Client.Abstractions/">
+    <Project Path="Synthiq.Etcd.Client.Abstractions/ref/Synthiq.Etcd.Client.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/ref/Synthiq.Etcd.Client.Transport.Abstractions/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Abstractions/ref/Synthiq.Etcd.Client.Transport.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/ref/Synthiq.Etcd.Client.Transport.Grpc/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Grpc/ref/Synthiq.Etcd.Client.Transport.Grpc.csproj" />
+  </Folder>
+  <Folder Name="/ref/Synthiq.Etcd.Client.Transport.Http/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Http/ref/Synthiq.Etcd.Client.Transport.Http.csproj" />
+  </Folder>
+
+  <!-- Source projects -->
+  <Folder Name="/source/Synthiq.Etcd.Client/">
+    <Project Path="Synthiq.Etcd.Client/source/Synthiq.Etcd.Client.csproj" />
+  </Folder>
+  <Folder Name="/source/Synthiq.Etcd.Client.Abstractions/">
+    <Project Path="Synthiq.Etcd.Client.Abstractions/source/Synthiq.Etcd.Client.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/source/Synthiq.Etcd.Client.Transport.Abstractions/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Abstractions/source/Synthiq.Etcd.Client.Transport.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/source/Synthiq.Etcd.Client.Transport.Grpc/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Grpc/source/Synthiq.Etcd.Client.Transport.Grpc.csproj" />
+  </Folder>
+  <Folder Name="/source/Synthiq.Etcd.Client.Transport.Http/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Http/source/Synthiq.Etcd.Client.Transport.Http.csproj" />
+  </Folder>
+
+  <!-- Test projects -->
+  <Folder Name="/tests/Synthiq.Etcd.Client/">
+    <Project Path="Synthiq.Etcd.Client/tests/integration/Synthiq.Etcd.Client.IntegrationTests.csproj" />
+    <Project Path="Synthiq.Etcd.Client/tests/unit/Synthiq.Etcd.Client.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Synthiq.Etcd.Client.Transport.Grpc/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Grpc/tests/Synthiq.Etcd.Client.Transport.Grpc.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Synthiq.Etcd.Client.Transport.Http/">
+    <Project Path="Synthiq.Etcd.Client.Transport.Http/tests/Synthiq.Etcd.Client.Transport.Http.Tests.csproj" />
+  </Folder>
+
+</Solution>

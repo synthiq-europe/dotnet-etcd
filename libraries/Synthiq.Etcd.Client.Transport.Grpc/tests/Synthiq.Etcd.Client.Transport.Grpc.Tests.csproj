@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Transport.Grpc\source\Synthiq.Etcd.Client.Transport.Grpc.csproj" />
+  </ItemGroup>
+
+</Project>

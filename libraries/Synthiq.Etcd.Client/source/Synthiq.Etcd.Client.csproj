@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsSourceProject>true</IsSourceProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Abstractions\source\Synthiq.Etcd.Client.Abstractions.csproj" />
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Transport.Abstractions\source\Synthiq.Etcd.Client.Transport.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

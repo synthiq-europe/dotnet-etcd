@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net8.0": {
+      "DotNet.ReproducibleBuilds": {
+        "type": "Direct",
+        "requested": "[1.2.25, 1.2.25]",
+        "resolved": "1.2.25",
+        "contentHash": "xCXiw7BCxHJ8pF6wPepRUddlh2dlQlbr81gXA72hdk4FLHkKXas7EH/n+fk5UCA/YfMqG1Z6XaPiUjDbUNBUzg=="
+      },
+      "Microsoft.VisualStudio.Threading.Analyzers": {
+        "type": "Direct",
+        "requested": "[17.14.15, 17.14.15]",
+        "resolved": "17.14.15",
+        "contentHash": "mXQPJsbuUD2ydq4/ffd8h8tSOFCXec+2xJOVNCvXjuMOq/+5EKHq3D2m2MC2+nUaXeFMSt66VS/J4HdKBixgcw=="
+      },
+      "synthiq.etcd.client": {
+        "type": "Project",
+        "dependencies": {
+          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
+          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+        }
+      },
+      "synthiq.etcd.client.abstractions": {
+        "type": "Project"
+      },
+      "synthiq.etcd.client.transport.abstractions": {
+        "type": "Project"
+      }
+    },
+    "net9.0": {
+      "DotNet.ReproducibleBuilds": {
+        "type": "Direct",
+        "requested": "[1.2.25, 1.2.25]",
+        "resolved": "1.2.25",
+        "contentHash": "xCXiw7BCxHJ8pF6wPepRUddlh2dlQlbr81gXA72hdk4FLHkKXas7EH/n+fk5UCA/YfMqG1Z6XaPiUjDbUNBUzg=="
+      },
+      "Microsoft.VisualStudio.Threading.Analyzers": {
+        "type": "Direct",
+        "requested": "[17.14.15, 17.14.15]",
+        "resolved": "17.14.15",
+        "contentHash": "mXQPJsbuUD2ydq4/ffd8h8tSOFCXec+2xJOVNCvXjuMOq/+5EKHq3D2m2MC2+nUaXeFMSt66VS/J4HdKBixgcw=="
+      },
+      "synthiq.etcd.client": {
+        "type": "Project",
+        "dependencies": {
+          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
+          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+        }
+      },
+      "synthiq.etcd.client.abstractions": {
+        "type": "Project"
+      },
+      "synthiq.etcd.client.transport.abstractions": {
+        "type": "Project"
+      }
+    }
+  }
+}
