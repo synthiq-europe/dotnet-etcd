@@ -9,4 +9,11 @@
     <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Transport.Abstractions\source\Synthiq.Etcd.Client.Transport.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>"Synthiq.Etcd.Client.Transport.Grpc.Tests"</_Parameter1>
+      <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
+    </AssemblyAttribute>
+  </ItemGroup>
+
 </Project>

@@ -39,6 +39,9 @@
     <Project Path="Synthiq.Etcd.Client/tests/integration/Synthiq.Etcd.Client.IntegrationTests.csproj" />
     <Project Path="Synthiq.Etcd.Client/tests/unit/Synthiq.Etcd.Client.UnitTests.csproj" />
   </Folder>
+  <Folder Name="/tests/Synthiq.Etcd.Client.Abstractions/">
+    <Project Path="Synthiq.Etcd.Client.Abstractions/tests/Synthiq.Etcd.Client.Abstractions.Tests.csproj" />
+  </Folder>
   <Folder Name="/tests/Synthiq.Etcd.Client.Transport.Grpc/">
     <Project Path="Synthiq.Etcd.Client.Transport.Grpc/tests/Synthiq.Etcd.Client.Transport.Grpc.Tests.csproj" />
   </Folder>

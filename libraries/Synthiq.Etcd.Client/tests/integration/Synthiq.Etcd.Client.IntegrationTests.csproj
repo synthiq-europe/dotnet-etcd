@@ -2,10 +2,20 @@
 
   <PropertyGroup>
     <IsTestProject>true</IsTestProject>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client\source\Synthiq.Etcd.Client.csproj" />
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Transport.Grpc\source\Synthiq.Etcd.Client.Transport.Grpc.csproj" />
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Transport.Http\source\Synthiq.Etcd.Client.Transport.Http.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.v3.runner.console" />
   </ItemGroup>
 
 </Project>
