@@ -200,28 +200,22 @@
       "synthiq.etcd.client": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       },
       "synthiq.etcd.client.transport.grpc": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       },
       "synthiq.etcd.client.transport.http": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       }
     },
@@ -424,28 +418,22 @@
       "synthiq.etcd.client": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       },
       "synthiq.etcd.client.transport.grpc": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       },
       "synthiq.etcd.client.transport.http": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       }
     }

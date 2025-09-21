@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>"Synthiq.Etcd.Client.Abstractions.Tests"</_Parameter1>
+      <_Parameter1>"Synthiq.Etcd.Client.Core.Tests"</_Parameter1>
       <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
     </AssemblyAttribute>
   </ItemGroup>

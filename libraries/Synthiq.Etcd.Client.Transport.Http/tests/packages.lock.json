@@ -197,17 +197,13 @@
           "xunit.v3.runner.common": "[3.0.1]"
         }
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       },
       "synthiq.etcd.client.transport.http": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       }
     },
@@ -407,17 +403,13 @@
           "xunit.v3.runner.common": "[3.0.1]"
         }
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       },
       "synthiq.etcd.client.transport.http": {
         "type": "Project",
         "dependencies": {
-          "Synthiq.Etcd.Client.Abstractions": "[1.0.0, )",
-          "Synthiq.Etcd.Client.Transport.Abstractions": "[1.0.0, )"
+          "Synthiq.Etcd.Client.Core": "[1.0.0, )"
         }
       }
     }

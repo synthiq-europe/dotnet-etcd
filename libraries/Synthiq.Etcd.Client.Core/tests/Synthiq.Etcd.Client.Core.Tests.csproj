@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Abstractions\source\Synthiq.Etcd.Client.Abstractions.csproj" />
+    <ProjectReference Include="$(LibrariesRoot)Synthiq.Etcd.Client.Core\source\Synthiq.Etcd.Client.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

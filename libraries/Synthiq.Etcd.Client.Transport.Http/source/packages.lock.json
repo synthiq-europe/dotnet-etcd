@@ -20,10 +20,7 @@
         "resolved": "17.14.15",
         "contentHash": "mXQPJsbuUD2ydq4/ffd8h8tSOFCXec+2xJOVNCvXjuMOq/+5EKHq3D2m2MC2+nUaXeFMSt66VS/J4HdKBixgcw=="
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       }
     },
@@ -46,10 +43,7 @@
         "resolved": "17.14.15",
         "contentHash": "mXQPJsbuUD2ydq4/ffd8h8tSOFCXec+2xJOVNCvXjuMOq/+5EKHq3D2m2MC2+nUaXeFMSt66VS/J4HdKBixgcw=="
       },
-      "synthiq.etcd.client.abstractions": {
-        "type": "Project"
-      },
-      "synthiq.etcd.client.transport.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       }
     }

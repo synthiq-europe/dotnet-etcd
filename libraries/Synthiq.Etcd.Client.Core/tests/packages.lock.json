@@ -197,7 +197,7 @@
           "xunit.v3.runner.common": "[3.0.1]"
         }
       },
-      "synthiq.etcd.client.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       }
     },
@@ -397,7 +397,7 @@
           "xunit.v3.runner.common": "[3.0.1]"
         }
       },
-      "synthiq.etcd.client.abstractions": {
+      "synthiq.etcd.client.core": {
         "type": "Project"
       }
     }
