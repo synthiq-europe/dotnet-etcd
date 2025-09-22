@@ -7,11 +7,14 @@
 
   <!-- Runtime dependencies. -->
   <ItemGroup>
+    <PackageVersion Include="Google.Protobuf" Version="3.32.1" />
+    <PackageVersion Include="Grpc.Net.Client" Version="2.71.0" />
   </ItemGroup>
 
   <!-- Development dependencies. -->
   <ItemGroup>
     <PackageVersion Include="DotNet.ReproducibleBuilds" Version="[1.2.25]" />
+    <PackageVersion Include="Grpc.Tools" Version="[2.72.0]" />
     <PackageVersion Include="Microsoft.DotNet.ApiCompat.Task" Version="[9.0.305]" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="[17.14.1]" />
     <PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers" Version="[17.14.15]" />

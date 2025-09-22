@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+
+  <ItemGroup>
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\api\etcdserverpb\rpc.proto"
+      Namespace="$(AssemblyName).Proto"
+      Link="etcd\api\etcdserverpb\rpc.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\api\authpb\auth.proto"
+      Link="etcd\api\authpb\auth.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\api\mvccpb\kv.proto"
+      Link="etcd\api\mvccpb\kv.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\api\versionpb\version.proto"
+      Link="etcd\api\versionpb\version.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\gogoproto\gogoproto\gogo.proto"
+      Link="gogoproto\gogo.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\grpc-gateway\protoc-gen-openapiv2\options\annotations.proto"
+      Link="protoc-gen-openapiv2\options\annotations.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\grpc-gateway\protoc-gen-openapiv2\options\openapiv2.proto"
+      Link="protoc-gen-openapiv2\options\openapiv2.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\googleapis\google\api\annotations.proto"
+      Link="google\api\annotations.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\googleapis\google\api\http.proto"
+      Link="google\api\http.proto" />
+  </ItemGroup>
+
+</Project>

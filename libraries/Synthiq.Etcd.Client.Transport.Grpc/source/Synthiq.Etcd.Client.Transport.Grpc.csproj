@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="Synthiq.Etcd.Client.Transport.Grpc.Build.props" />
+
   <PropertyGroup>
     <IsSourceProject>true</IsSourceProject>
   </PropertyGroup>
@@ -15,5 +17,21 @@
       <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
     </AssemblyAttribute>
   </ItemGroup>
+
+  <!-- Runtime dependencies. -->
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Net.Client" />
+  </ItemGroup>
+
+  <!-- Development dependencies. -->
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Import Project="Synthiq.Etcd.Client.Transport.Grpc.Build.targets" />
 
 </Project>
