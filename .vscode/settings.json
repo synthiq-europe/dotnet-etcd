@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "*.globalconfig": "editorconfig"
+    "*.globalconfig": "editorconfig",
+    "*.slnx": "xml"
   }
 }
