@@ -15,6 +15,16 @@
     <ProtoInclude
       Include="$(VendorRoot)\etcd\api\versionpb\version.proto"
       Link="etcd\api\versionpb\version.proto" />
+
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\server\etcdserver\api\v3election\v3electionpb\v3election.proto"
+      Namespace="$(AssemblyName).Proto"
+      Link="etcd\server\etcdserver\api\v3election\v3electionpb\v3election.proto" />
+    <ProtoInclude
+      Include="$(VendorRoot)\etcd\server\etcdserver\api\v3lock\v3lockpb\v3lock.proto"
+      Namespace="$(AssemblyName).Proto"
+      Link="etcd\server\etcdserver\api\v3lock\v3lockpb\v3lock.proto" />
+
     <ProtoInclude
       Include="$(VendorRoot)\gogoproto\gogoproto\gogo.proto"
       Link="gogoproto\gogo.proto" />
