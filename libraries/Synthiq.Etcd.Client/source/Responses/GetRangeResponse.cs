@@ -9,4 +9,4 @@ public sealed record GetRangeResponse
     IReadOnlyList<EtcdKeyValue> KeyValues,
     Int64 Count,
     Boolean HasMore
-) : IHasResponseHeader;
+);

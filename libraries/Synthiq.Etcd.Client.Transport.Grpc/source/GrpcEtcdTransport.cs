@@ -5,7 +5,7 @@ using Grpc.Net.Client;
 
 namespace Synthiq.Etcd.Client.Transport.Grpc;
 
-internal sealed class GrpcEtcdTransport
+internal sealed class GrpcEtcdTransport : IEtcdTransport
 {
     private readonly GrpcChannel _channel;
 

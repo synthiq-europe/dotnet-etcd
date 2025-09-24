@@ -1,7 +1,7 @@
 namespace Synthiq.Etcd.Client;
 
-public sealed record DeleteKeyResponse
+public sealed record PutKeyResponse
 (
     ResponseHeader Header,
     EtcdKeyValue? PreviousKeyValue
-) : IHasResponseHeader;
+);

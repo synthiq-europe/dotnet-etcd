@@ -8,4 +8,4 @@ public sealed record DeleteRangeResponse
     ResponseHeader Header,
     IReadOnlyList<EtcdKeyValue> PreviousKeyValues,
     Int64 Deleted
-) : IHasResponseHeader;
+);
